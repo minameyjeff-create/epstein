@@ -1,0 +1,149 @@
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: 'Rubik Dirt', system-ui;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #700C0C;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #bcaeae;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+body {
+    background: linear-gradient(rgb(196, 12, 12), #5A0303);
+    background-repeat: no-repeat;
+    min-height: 500px;
+}
+
+.body {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+h1 {
+  font-family: 'Rubik Dirt', system-ui;
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 5px 5px #615F5F;
+}
+
+li {
+  font-size: 20px;
+  text-shadow: 2px 2px #333;
+  color: #727070;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  
+  .div1 {
+    grid-area: 1 / 1 / 2 / 3; 
+    padding-top: 125px;
+    }
+  .div2 {
+    grid-area: 1 / 3 / 2 / 4;
+    padding-top: 50px;
+  }
+  .div3 { grid-area: 2 / 2 / 3 / 4; }
+  .div4 { 
+    grid-area: 2 / 1 / 3 / 2; 
+    text-align: center;
+    padding-top: 50px;
+  }
+  .div5 { grid-area: 3 / 1 / 4 / 3; }
+  .div6 { 
+    grid-area: 3 / 3 / 4 / 4;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .div7 {
+    grid-area: 4 / 1 / 5 / 2;
+    text-align: center;
+    padding-top: 70px;
+  }
+  .div8 { grid-area: 4 / 2 / 5 / 4; }
+
+p {
+  font-size: 25px;
+  font-weight: bold ;
+}
+
+iframe {
+  float: left;
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+}
+
+.align {
+  padding-top: 50px;
+}
+
+.gallery {
+  display: flex;
+  
+}
